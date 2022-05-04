@@ -10,9 +10,6 @@ exports[`About component matches snapshot DOM node structure 1`] = `
     >
       Who am I?
     </h1>
-    <h3>
-      Jarod
-    </h3>
     <img
       alt="cover"
       class="my-2"

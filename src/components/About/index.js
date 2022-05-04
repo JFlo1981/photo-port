@@ -1,12 +1,11 @@
-import React, {useState} from 'react'
+import React from 'react'
 import coverImage from "../../assets/cover/cover-image.jpg";
 
-export default function About() {
-const [name, setName] = useState("Jarod");
+function About() {
+
   return (
     <section className="my-5" >
       <h1 id="about">Who am I?</h1>
-      <h3>{name}</h3>
       <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
       <div className="my-2">
         <p>
@@ -17,3 +16,4 @@ const [name, setName] = useState("Jarod");
   )
 }
 
+export default About
