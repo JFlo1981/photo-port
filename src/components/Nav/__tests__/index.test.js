@@ -7,16 +7,12 @@ import Nav from '..';
 afterEach(cleanup);
 
 describe('Nav component', () => {
-      // baseline test
-
   it('renders', () => {
     render(<Nav />);
   });
-    // snapshot test
 
   it('matches snapshot', () => {
     const { asFragment } = render(<Nav />);
-          // assert value comparison
 
     expect(asFragment()).toMatchSnapshot();
   });
@@ -24,11 +20,11 @@ describe('Nav component', () => {
 
 describe('emoji is visible', () => {
   it('inserts emoji into the h2', () => {
-  const { getByLabelText } = render(<Nav />);
+    const { getByLabelText } = render(<Nav />);
 
-  expect(getByLabelText('camera')).toHaveTextContent('📸');
+    expect(getByLabelText('camera')).toHaveTextContent('📸');
   });
-})  
+})
 
 describe('links are visible', () => {
   it('inserts text into the links', () => {
